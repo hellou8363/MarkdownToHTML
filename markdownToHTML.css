@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+#btn_convert {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: auto 20px;
+}
+
+
+#container {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px auto;
+}
+
