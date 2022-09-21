@@ -13,15 +13,18 @@ function changeText() {
     // 문장 첫 글자 체크
     const count = checkStartChar(inputText, i);
 
+    console.log(grammarCheck);
     // 첫 글자 체크에서 이미 체크된 문자는 패스
     if (count > 0) {
       i += count;
       continue;
     }
 
-    if (inputText[i] === "\n") {
+    if (inputText[i] === " " && inputText[i + 1] === " ") {
       // 문장이 끝날 때마다 끝 맺음 태그가 필요한지 여부 체크
       checkEndChar();
+      // Spacebar 2번으로 공백이 __이면 <br/>
+      $("#outputHTML").value += `<br/>`;
       continue;
     }
 
